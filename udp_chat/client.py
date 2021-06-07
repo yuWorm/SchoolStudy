@@ -89,6 +89,7 @@ class MsgPage(Frame):
 
     def close(self):
         self.root.destroy()
+        self.sendMsg('退出了聊天')
         # 终止线程，直接异常退出
         self.client.close()
 
